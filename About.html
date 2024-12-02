@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- title of site -->
+    <title>Naitik Logistics</title>
+
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--flaticon.css-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--slick.css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .image-container,
+        .content-container {
+            flex: 1 1 50%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content-container {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+         #about h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ff545a;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+
+            .image-container,
+            .content-container {
+                flex: 1 1 100%;
+            }
+        }
+#sectionForQuote {
+    background: linear-gradient(135deg, #f5f7fa);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.quote-container {
+    position: relative;
+    animation: fadeIn 2s ease-out;
+}
+
+.quote-text {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    position: relative;
+    padding: 20px;
+    background: #ffffff;
+ 
+    border-radius: 5px;
+    display: inline-block;
+    animation: fadeSlideIn 2s ease-out;
+}
+
+.quote-text::before {
+    content: "“";
+    font-size: 3em;
+    color: #413e3e;;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    animation: bounceIn 1s ease-out;
+}
+
+.quote-text::after {
+    content: "”";
+    font-size: 3em;
+    color: #2b2929;;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    animation: bounceIn 1s ease-out;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff545a;;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-out 0.5s;
+}
+
+.author-title {
+    font-size: 1em;
+    color: #d0a2a2;
+    animation: fadeIn 1.5s ease-out 1s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- top-area Start -->
+    <section class="top-area">
+        <div class="header-area">
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70"
+                data-minus-value-mobile="55" data-speed="1000">
+
+                <div class="container">
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Naitik<span>Logistics</span></a>
+
+                    </div><!--/.navbar-header-->
+                    <!-- End Header Navigation -->
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./About.html">About</a></li>
+                            <li><a href="./Service.html">Service</a></li>
+                            <li><a href="./Blog.html">blog</a></li>
+                            <li><a href="./Contact.html">contact</a></li>
+                        </ul><!--/.nav -->
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.container-->
+            </nav><!--/nav-->
+        </div><!--/.header-area-->
+        <div class="clearfix"></div>
+
+    </section><!-- /.top-area-->
+    
+    <div id="about">
+        <h2 id="about" style="text-align: center; padding-bottom: 2px;"><b>About Us</b></h2>
+        <section class="section-container">
+
+            <div class="image-container">
+                <img src="./assets/images/explore/Fleet.png" alt="Image Description">
+            </div>
+            <div class="content-container">
+                <h2>About Company</h2>
+                <p>
+                    Founded in 2019, our company set out to provide reliable and professional transportation services.
+                    Despite the challenges of the pandemic, we stayed focused and determined, growing stronger through
+                    hard
+                    work.
+
+                    Our team of well-trained drivers is dedicated to ensuring safe and timely services. We prioritize
+                    punctuality and
+                    safety, whether for personal, business, or cargo transport.
+
+                    We offer flexible and affordable solutions tailored to your needs. Our vehicles are well-maintained,
+                    and
+                    we use the
+                    latest technology to ensure smooth, comfortable, and on-time trips.
+
+                    With a commitment to excellence, we continue to expand and improve every day. Choose us for
+                    transportation you can
+                    trust—reliable, safe, and always on time.
+                </p>
+            </div>
+        </section>
+        <section id="sectionForQuote">
+            <div class="quote-container">
+                <p class="quote-text" id="txt-p">
+                    We at Naitik Logistics promise to become the safest and reliable logistic service provider. Our
+                    commitment is to provide seamless service without compromising on quality. The staff are trained and
+                    experienced and ready to step up and go the extra mile to serve and meet the customer expectations.
+                    All our
+                    efforts are geared towards offering you the best.
+                </p>
+                <p class="author-name">Mr. Amit Tiwari</p>
+                <p class="author-title">Director, Naitik Logistics Ltd.</p>
+            </div>
+            <hr>
+        </section>
+     
+
+
+    </div>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-menu">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">Naitik<span>Logistics</span></a>
+                        </div><!--/.navbar-header-->
+                    </div>
+                    <div class="col-sm-9">
+                        <ul class="footer-menu-item">
+                            <li class=" scroll active"><a href="./index.html">Home</a></li>
+                            <li class="scroll"><a href="#About">About</a></li>
+                            <li class="scroll"><a href="#explore">Service</a></li>
+                            <li class="scroll"><a href="#blog">blog</a></li>
+                            <li class="scroll"><a href="#contact">contact</a></li>
+                        </ul><!--/.nav -->
+                    </div>
+                </div>
+            </div>
+            <div class="hm-footer-copyright">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>
+                            &copy;copyright. designed and developed by <a href="">Yogesh Mishra</a>
+                        </p><!--/p-->
+                    </div>
+                </div>
+
+            </div><!--/.hm-footer-copyright-->
+        </div><!--/.container-->
+
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
+
+        </div><!--/.scroll-Top-->
+
+    </footer><!--/.footer-->
+    <script src="assets/js/jquery.js"></script>
+
+    <!--modernizr.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!--bootstrap.min.js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- bootsnav js -->
+    <script src="assets/js/bootsnav.js"></script>
+
+    <!--feather.min.js-->
+    <script src="assets/js/feather.min.js"></script>
+
+    <!-- counter js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!--slick.min.js-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
